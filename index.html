@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(238, 156, 167);
+        }
+        
+        .centered-div {
+            position: fixed; /* 使用定位属性，将元素固定在页面上 */
+            top: 50%; /* 距离顶部的距离为 50% */
+            left: 50%; /* 距离左侧的距离为 50% */
+            transform: translate(-50%, -50%); /* 将元素向左和向上移动自身宽度和高度的一半，以便实现居中效果 */
+            border: 1px solid #9e7676;
+            width: 300px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            background-color: rgb(241, 176, 185);
+            text-align: center;
+            border-radius: 20px; /* 添加圆角效果 */
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            background-color: #ddcbd6;
+            
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #d462c1;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #383838;
+        }
+        p{
+            color: #8d287c;
+            font-style: oblique;
+            font-weight: 650;
+        }
+        h1{
+            color:#eeff00
+        }
+        /* 按您的注释，在此处添加样式 */
+        .top-div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(238, 156, 167);
+            padding: 20px;
+            /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+            text-align: center;
+            z-index: 999; /* 设置一个较高的 z-index 值确保在页面上方显示 */
+        }
+        biaoti{
+            font-size: 40px;
+            font-style: oblique;
+            font-weight: 800;
+            font-size: 60px;
+            color: #8d287c;
+        }
+    </style>
+    <embed src="./SZ·MCF - 携温柔坠落.mp3" hidden="true" autostart="true" loop="true">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <!-- 添加一个包含标题的顶部 <div> -->
+    <div class="top-div">
+        <biaoti>过一个不一样的生日(ಡωಡ)</biaoti>
+    </div>
+    
+    <div class="centered-div">
+        <div>
+            <h1>生日快乐！</h1>
+            <p>密&emsp;&emsp;码</p>
+        </div>
+        
+        <div>
+            <input type="password" id="passwordInput" autofocus>
+        </div>
+
+        <div class="btn-wrapper">
+            <button class="btn" id="loginButton">确定</button>
+        </div>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const loginButton = document.getElementById('loginButton');
+
+        loginButton.addEventListener('click', function() {
+            const password = '2023714'; // 设置您需要的密码
+            if (passwordInput.value === password) {
+                // 根据您的要求，在输入指定密码后跳转到其他网页
+                window.location.href = './index1.html';
+                
+            }
+        });
+    </script>
+</body>
+</html>
+
